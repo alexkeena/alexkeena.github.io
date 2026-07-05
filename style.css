@@ -447,3 +447,45 @@
     max-width: 560px;
     margin: 0 0 8px;
   }
+
+  /* ---------- SCHOLARSHIP: KEYWORD FILTER & TAGS ---------- */
+  .keyword-filter-bar{
+    display:flex; flex-wrap:wrap; gap: 8px;
+    margin: 0 0 44px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid var(--line);
+  }
+  .keyword-chip{
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    color: var(--ink-soft);
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 6px 13px;
+    cursor: pointer;
+    transition: all .12s ease;
+  }
+  .keyword-chip:hover{ border-color: var(--accent); color: var(--accent); }
+  .keyword-chip.active{
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+  }
+  .pub-keywords{
+    margin-top: 8px;
+    display:flex; flex-wrap:wrap; gap: 6px;
+  }
+  .pub-keyword-tag{
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    background: var(--accent-soft);
+    border-radius: 3px;
+    padding: 2px 7px;
+  }
+  .pub-item.is-hidden{ display:none; }
+  .theme-section.is-hidden{ display:none; }
